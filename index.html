@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
 
+    <title>Frontend Mentor | Calculator app</title>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #fff;
+        margin-top: 4rem;
+      }
+      .attribution a {
+        color: #ffc857;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-settings">
+        <h3>calc</h3>
+      </div>
+      <div class="display">
+        <p id="display"></p>
+      </div>
+      <div class="keys">
+        <button class="key" id="num7">7</button>
+        <button class="key" id="num8">8</button>
+        <button class="key" id="num9">9</button>
+        <button class="key key-blue" id="delete">DEL</button>
+        <button class="key" id="num4">4</button>
+        <button class="key" id="num5">5</button>
+        <button class="key" id="num6">6</button>
+        <button class="key" id="plus">+</button>
+        <button class="key" id="num1">1</button>
+        <button class="key" id="num2">2</button>
+        <button class="key" id="num3">3</button>
+        <button class="key" id="minus">-</button>
+        <button class="key" id="point">.</button>
+        <button class="key" id="num0">0</button>
+        <button class="key" id="divide">/</button>
+        <button class="key" id="multiply">x</button>
+        <button class="key key-blue" id="reset">RESET</button>
+        <button class="key key-red" id="equals">=</button>
+
+        <!-- <div class="key" id="num7">7</div>
+        <div class="key" id="num8">8</div>
+        <div class="key" id="num9">9</div>
+        <div class="key key-blue" id="del">DEL</div>
+        <div class="key" id="num4">4</div>
+        <div class="key" id="num5">5</div>
+        <div class="key" id="num6">6</div>
+        <div class="key" id="plus">+</div>
+        <div class="key" id="num1">1</div>
+        <div class="key" id="num2">2</div>
+        <div class="key" id="num3">3</div>
+        <div class="key" id="minus">-</div>
+        <div class="key" id="point">.</div>
+        <div class="key" id="num0">0</div>
+        <div class="key" id="divide">/</div>
+        <div class="key" id="multiply">x</div>
+        <div class="key key-blue" id="reset">RESET</div>
+        <div class="key key-red" id="equals">=</div> -->
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Nicky Dekker</a>.
+      </div>
+
+      <script src="./js/calculator.js"></script>
+    </div>
+  </body>
 </html>

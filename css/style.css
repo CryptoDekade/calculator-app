@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --background: hsl(221, 27%, 31%);
+  --background-keys: hsl(223, 31%, 20%);
+  --background-display: hsl(224, 36%, 15%);
+
+  --key-background: hsl(30, 25%, 89%);
+  --key-background-red: hsl(6, 63%, 50%);
+  --key-background-blue: hsl(225, 21%, 49%);
+
+  --text: #fff;
+  --text-dark: hsl(221, 14%, 31%);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 2rem;
+  font-family: 'Roboto Mono', monospace;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 25%;
+  height: 25%;
+  align-content: center;
+  justify-content: center;
+}
+
+.header-settings {
+}
+
+.display {
+  background-color: var(--background-display);
+  color: var(--text);
+  height: 5rem;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 2fr;
+  justify-items: right;
+  align-content: center;
+}
+
+.keys {
+  background-color: var(--background-keys);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 1rem;
+  /* height: 16rem; */
+}
+
+.key {
+  background-color: var(--key-background);
+  color: var(--text-dark);
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+  margin: 1rem;
+  width: 6rem;
+  height: 4rem;
+  border: none;
+}
+
+.key-blue {
+  background-color: var(--key-background-blue);
+  color: var(--text);
+}
+.key-red {
+  background-color: var(--key-background-red);
+  color: var(--text);
+}
